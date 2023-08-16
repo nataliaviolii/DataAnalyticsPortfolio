@@ -95,37 +95,38 @@
 
 									<h2>PROCESS</h2>
 									<p></p>
-									<h3>Entity Relationship Diagram (ERD)</h3>
-									An ERD illustrates the links between the tables in a relational database. My first step was to extract the snowflake ERD with the help of DBVisualizer tool. The snowflake schema is a multidimensional data model which is an extension of the star schema, in which the dimension tables are broken down into subdimensions. 
-									<span class="image fit"><img src="images/ERD.png" alt="" /></span>
+										<h3>Entity Relationship Diagram (ERD)</h3>
+										An ERD illustrates the links between the tables in a relational database. My first step was to extract the snowflake ERD with the help of DBVisualizer tool. The snowflake schema is a multidimensional data model which is an extension of the star schema, in which the dimension tables are broken down into subdimensions. 
+										From the snowflake ERD below, I separated the table into two parts:
+											<li>Fact Tables</li>
+											<li>Dimension Tables</li>
+											Click this <a href="https://drive.google.com/file/d/16len1JA-47JHbcT0QH72PlNlzIQoEBFC/view?usp=share_link"  target="_blank" class=""> Data Dictionary</a> to see the details.
+										<span class="image fit"><img src="images/ERD.png" alt="" /></span>
 
-									From the snowflake ERD above, I separated the table into two parts:
-									<li>Fact Tables</li>
-									<li>Dimension Tables</li>
-									Click this <a href="https://drive.google.com/file/d/16len1JA-47JHbcT0QH72PlNlzIQoEBFC/view?usp=share_link"  target="_blank" class=""> Data Dictionary</a> to see the details.
+									
+										<h3>Join Table</h3>
+										I used inner join quite often across this project where it helps me look up matching values in the join column to connect two tables. As an example below when I wanted to find out the top 20 countries with highest total payment with the help of their foreign or primary key:
+										<span class="image fit"><img src="images/SQL_join.png" alt="" /></span>	
 
-									<br>
-									<h3>Join Table</h3>
-									I used inner join quite often across this project where it helps me look up matching values in the join column to connect two tables. As an example below when I wanted to find out the top 20 countries with highest total payment with the help of their foreign or primary key:
-									<span class="image fit"><img src="images/SQL_join.png" alt="" /></span>	
+										<br>
+									
+										<h3>Subquery</h3>
+											<span class="image fit"><img src="images/SQL_subquery.png" alt="" /></span>
+											My notes:
+											<li>In this case, I can't do two steps above without subqueries (or CTEs) as I am doing multiple levels of aggregations, where I sum first then proceed to count </li>
+											<li>The sum here is calculated with the help of the aggregate function SUM() and is returned by the subquery. In other words, I can't replace the subqueries because I don’t have a table with the sum previously calculated </li>
 
-									<br>
-									<h3>Subquery</h3>
-									<span class="image fit"><img src="images/SQL_subquery.png" alt="" /></span>
-									My notes:
-									<li>In this case, I can't do two steps above without subqueries (or CTEs) as I am doing multiple levels of aggregations, where I sum first then proceed to count </li>
-									<li>The sum here is calculated with the help of the aggregate function SUM() and is returned by the subquery. In other words, I can't replace the subqueries because I don’t have a table with the sum previously calculated </li>
-
-									<br>
-									<h3>Common Table Expressions (CTE)</h3>
-									My notes:
-									<li>Some of the main things that make CTEs advantageous over subqueries are maintainability and multiple referencing </li>
-									<li>Later (in complex queries) I believe CTE will be more useful because once I already store the value in the CTE, so whenever I need it, I can simply refer to it by the CTE name </li>
-									<li>If I want to do an update then it will be more efficient because I only need to update the CTE query (I only need to change it in one place) and call it back once it is fixed </li>
-									<li>Since things get complicated later, CTE will be the best option for making queries readable</li>
+										<br>
+									
+										<h3>Common Table Expressions (CTE)</h3>
+											My notes:
+											<li>Some of the main things that make CTEs advantageous over subqueries are maintainability and multiple referencing </li>
+											<li>Later (in complex queries) I believe CTE will be more useful because once I already store the value in the CTE, so whenever I need it, I can simply refer to it by the CTE name </li>
+											<li>If I want to do an update then it will be more efficient because I only need to update the CTE query (I only need to change it in one place) and call it back once it is fixed </li>
+											<li>Since things get complicated later, CTE will be the best option for making queries readable</li>
 									
 
-		
+										<hr />
 									<h2>RESULTS</h2>
 									<li><a href="https://public.tableau.com/app/profile/natalia.violi.kristena.wijaya/viz/CareerFoundry-RockbusterStealthFinalProject_16813935965380/RockbusterStealthStoryboard"  target="_blank" class="">RockbusterStealth Dashboard</a></li>
 									<li><a href="https://github.com/nataliaviolii/RockbusterStealth/blob/main/Queries.md"  target="_blank" class="">RockbusterStealth SQL Queries</a></li>
