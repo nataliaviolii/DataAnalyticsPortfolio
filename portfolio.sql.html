@@ -96,9 +96,17 @@
 									<h2>PROCESS</h2>
 									<p></p>
 									<h3>Entity Relationship Diagram (ERD)</h3>
-									An entity relationship diagram (ERD) illustrates the links between the tables in a relational database. My first step was to extract the snowflake ERD with the help of DBVisualizer tool. The snowflake schema is a multidimensional data model which is an extension of the star schema, in which the dimension tables are broken down into subdimensions. 
+									An ERD illustrates the links between the tables in a relational database. My first step was to extract the snowflake ERD with the help of DBVisualizer tool. The snowflake schema is a multidimensional data model which is an extension of the star schema, in which the dimension tables are broken down into subdimensions. 
 									<span class="image fit"><img src="images/ERD.png" alt="" /></span>
-										
+
+									From the snowflake ERD above, I separated the table into two parts:
+									<li>Fact Tables</li>
+									<li>Dimension Tables</li>
+									Click <a href="https://drive.google.com/file/d/16len1JA-47JHbcT0QH72PlNlzIQoEBFC/view?usp=share_link"  target="_blank" class="">RockbusterStealth Data Dictionary</a> to see the details.
+									
+									<h3>Join Table</h3>
+									I use inner join quite often across projects where it helps to look up matching values in the join column (with the help of foreign key or primary key) that can connect two tables. As an example below when I wanted to find out the top 20 countries with highest total payment:
+									<span class="image fit"><img src="images/ERD.png" alt="" /></span>	
 
 		
 									<h2>RESULTS</h2>
