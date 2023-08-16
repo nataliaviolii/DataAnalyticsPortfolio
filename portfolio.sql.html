@@ -123,9 +123,23 @@
 											<li>Later (in complex queries) I believe CTE will be more useful because once I already store the value in the CTE, then whenever I need it, I can simply refer to it by the CTE name </li>
 											<li>If I want to do an update then it will be more efficient because I only need to update the CTE query (I only need to change it in one place) and call it back once it is fixed </li>
 											<li>Since things get complicated later, CTE will be the best option for making queries readable</li>
-									
 
+										<br>
+										<h3>Analysis</h3>
+											<span class="image fit"><img src="images/SQL_analysis.png" alt="" /></span>
+											<b>Correlation between average rental duration and average movie length grouped by category:</b>
+												<li>The average rental duration based on the average movie length is about 5 days</li>
+												<li>The correlation is 0.4, which is low</li>
+											Therefore, the movie length doesn't really affect the results of the rental duration
+
+											<br>
+											<b>Correlation between average rental duration and average rental rate grouped by category:</b>
+												<li>The average rental duration based on the average rental rate is about 5 days</li>
+												<li>The correlation is 0.06, which is very low</li>
+											Therefore, the rental rate doesn't not affect or provide any correlation to the results of the rental duration
+						
 										<hr />
+								
 									<h2>RESULTS</h2>
 										<li><a href="https://public.tableau.com/app/profile/natalia.violi.kristena.wijaya/viz/CareerFoundry-RockbusterStealthFinalProject_16813935965380/RockbusterStealthStoryboard"  target="_blank" class="">RockbusterStealth Dashboard</a></li>
 										<li><a href="https://github.com/nataliaviolii/RockbusterStealth/blob/main/Queries.md"  target="_blank" class="">RockbusterStealth SQL Queries</a></li>
