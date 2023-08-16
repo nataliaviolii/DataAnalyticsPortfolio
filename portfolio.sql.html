@@ -112,16 +112,16 @@
 									
 										<h3>Subquery</h3>
 											<span class="image fit"><img src="images/SQL_subquery.png" alt="" /></span>
-											My notes:
+											<b>My notes:</b>
 											<li>In this case, I can't do the step above without subqueries (or CTEs) as I am doing multiple levels of aggregations, where I sum first then proceed to count </li>
 											<li>The sum here is calculated with the help of the aggregate function SUM() and is returned by the subquery. In other words, I can't replace the subqueries because I don’t have a table with the sum previously calculated </li>
 
 										<br>
 									
 										<h3>Common Table Expressions (CTE)</h3>
-											My notes:
+											<b>My notes:</b>
 											<li>Some of the main things that make CTEs advantageous over subqueries are maintainability and multiple referencing </li>
-											<li>Later (in complex queries) I believe CTE will be more useful because once I already store the value in the CTE, so whenever I need it, I can simply refer to it by the CTE name </li>
+											<li>Later (in complex queries) I believe CTE will be more useful because once I already store the value in the CTE, then whenever I need it, I can simply refer to it by the CTE name </li>
 											<li>If I want to do an update then it will be more efficient because I only need to update the CTE query (I only need to change it in one place) and call it back once it is fixed </li>
 											<li>Since things get complicated later, CTE will be the best option for making queries readable</li>
 									
