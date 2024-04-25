@@ -128,13 +128,13 @@
 							
 
 									<h3>Step 3: Analysis</h3>
-									<li>Clustering</li>
+									<li>Cluster Analysis<b></b></li>
 									<p>Here I conducted more analysis to discover hidden and interesting patterns.</p>
 									<span class="image fit"><img src="images/cb_clustering.png" alt="" /></span>
 									<span class="image fit"><img src="images/cb_clustering_1.png" alt="" /></span>
 									<p>Younger people have shorter average trip durations and tend to start their trips later in the night, while older people have a higher average trip duration.</p>
 
-									<li>Spatial</li>
+									<li><b>Spatial Analysis</b></li>
 									<span class="image fit"><img src="images/cb_geo.png" alt="" /></span>
 									<p>The busiest station to start:</p>
 									<li>Pershing Square N</li>
@@ -143,82 +143,17 @@
 									<li>Lafayette St & E 8 St</li>
 									<li>West St & Chambers St</li>
 
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<span class="image fit"><img src="images/busiest_days.png" alt="" /></span>
-										</div>
-										
-										<div class="col-6 col-12-small">
-											<br>
-											<br>
-											<br>
-											<p>The busiest days are <b>Saturday (0), Sunday (1), and Friday (6).</b> The least busy days are Tuesday (3) and Wednesday (4).</p>
-										</div>
-									</div> 
+									<li><b>Time Series Analysis (Forecast)</b></li>
+									<span class="image fit"><img src="images/cb_forecast.png" alt="" /></span>
+									<p>Forecast shows that this will repeat the pattern that at weekends the number of trips will decrease</p>
 
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<span class="image fit"><img src="images/busiest_hours.png" alt="" /></span>
-										</div>
-										
-										<div class="col-6 col-12-small">
-											<br>
-											<br>
-											<br>
-											<p>Orders start to get crowded at <b>09.00 AM to 04:00 PM (working hours)</b> while the quiet hours are between 12.00 AM to 06.00 AM.</p>
-										</div>
-									</div> 
-								
-									<li><b>What’s the distribution among users in regards to their brand loyalty?</b></li>
-									
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<span class="image fit"><img src="images/loyalty_status.png" alt="" /></span>
-										</div>
-										
-										<div class="col-6 col-12-small">
-											<br>
-											<br>
-											<li>New Customer: Total orders are below 10</li>
-											<li>Regular Customer: Total orders are between 10 & 40</li>
-											<li>Loyal Customer: Total orders are above 40</li>
-											Loyalty status is dominated by <b>regular customers</b>
-										</div>
-									</div> 
-
-									<div class="row">									
-										<div class="col-6 col-12-small">
-											<span class="image fit"><img src="images/orderfreq_loyalty2.png" alt="" /></span>
-										</div>
-										
-										<div class="col-6 col-12-small">
-											<br>
-											<p>Most of the frequent customers come from regular to loyal status. Conversely, non-frequent customers come from customers with new status. </p>
-											Frequent customer: median from days_since_prior_order is less than 10 days
-										</div>
-									</div>
-										
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<span class="image fit"><img src="images/orderfreq_loyalty.png" alt="" /></span>
-										</div>
-										
-										<div class="col-6 col-12-small">
-										<p>How often do they return to Instacart?</p>
-											<li>Loyal customer: About 5 days </li>
-											<li>Regular customer: About 9 days </li>
-											<li>New customer: About 17 days </li>
- 											Therefore, regular and loyal customers tend to return in a short time to buy other products.
-										</div>
-									</div>
-	
-									<hr/>
-								
+					
 									<h2>RESULTS</h2>
 									<b>Sample results:</b>
-										<li>Busy hours: 09:00 AM till 04:00 PM</li>
-										<li>Busy days: Friday, Saturday, and Sunday</li>
-										<li>Instacart customers are predominately regular customers who have total orders between 10 & 40 and have an average median prior order of about 9 days.</li>
+										<li>Busy hours: 08:00 and 17:00 - 18:00</li>
+										<li>Busy days: Weekdays (especially Friday)</li>
+										<li>Even though weekends are less busy, the average trip duration is longer than other days</li>
+										<li>Younger people have shorter average trip durations and tend to start their trips later in the night, while older people have a higher average trip duration</li>
 									<br>
 									<b>Full results:</b>
 										<li><a href="https://drive.google.com/file/d/1G3B9sfZjDeyQVxhJbSqI3ZpqTXQDN1N7/view?usp=sharing"  target="_blank" class="">Data Visualization</a></li>
