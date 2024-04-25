@@ -1,1 +1,301 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Natalia's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="portfolio.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li class="active"><a href="portfolio.html">Portfolio</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/natalia-violi-kristena-wijaya-54b71b192/" target="_blank" class="icon brands fa-linkedin"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/nataliavioli/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/nataliaviolii" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Instacart Grocery Basket Analysis<br />
+									<br>
+									</h1>
+								</header>
+								<hr />
+								<!-- Text stuff -->
+									<h2>PROJECT OVERVIEW</h2>
+									<p></p>
+									<h3>Company</h3>
+										<p>Instacart is an American delivery company that operates a grocery delivery and pick-up service in the United States and Canada. The company offers its services via a website and mobile app. The service allows customers to order groceries from participating retailers with the shopping being done by a personal shopper. <a href="https://en.wikipedia.org/wiki/Instacart" class="">Wikipedia </a></p>
+									
+									<h3>Current Situation</h3>
+										<p>Instacart already has very good sales, but they want to uncover more information about their sales patterns. The Instacart stakeholders are most interested in the variety of customers in their database along with their purchasing behaviors.
+									
+									<h3>Key Questions</h3>
+										<li>The sales team needs to know what the busiest days of the week and hours of the day are.</li>
+										<li>They also want to know whether there are particular times of the day when people spend the most money.</li>
+										<li>Are there certain types of products that are more popular than others?</li>
+										<li>What’s the distribution among users in regards to their brand loyalty?</li>
+										<li>Are there differences in ordering habits based on a customer’s region?</li>
+										<li>Are there differences in ordering habits based on a customer’s loyalty status?</li>
+										<li>Other key questions can be found in my <a href="https://docs.google.com/spreadsheets/d/13W1Wvlh3XW3bLqiyPO9NzUhEY6cHNuid/edit?usp=sharing&ouid=116112889895261538034&rtpof=true&sd=true"  target="_blank" class="">Final Report - Instacart Grocery</a>
+									</p>
+									
+									<h3>Objective</h3>
+										<p>The objective of this project is to analyze customer behavior and uncover patterns for growth.</p>
+
+									<h3>Context</h3>
+									This project was created with the aim of diving deeper into the use of Python tool and its libraries as a part of <a href= "https://drive.google.com/file/d/1TfmLX7bXt0N15lU57NtwaBwZdp8ZJXOG/view?usp=sharing"  target="_blank" class="">CareerFoundry's Data Immersion Program</a>.
+									<hr />
+
+									<!-- Lists -->
+									<h2>TOOLS AND SKILLS</h2>
+									<div class="row">
+										<div class="col-6 col-12-small">
+
+											<h3>TOOLS</h3>
+											<ul>
+												<li>Python</li>
+												<li>Pandas</li>
+												<li>NumPy</li>
+												<li>Seaborn</li>
+												<li>Anaconda</li>
+												<li>Matplotlib</li>
+												<li>Jupyter Notebook</li>
+											</ul>
+
+										</div>
+										
+										<div class="col-6 col-12-small">
+
+											<h3>SKILLS</h3>
+											<ul class="alt">
+												<li>Exporting Data</li>
+												<li>Combining Data</li>
+												<li>Aggregating Variables</li>
+												<li>Deriving New Variables</li>
+												<li>Data Consistency Checks</li>
+												<li>Data Wrangling & Subsetting</li>
+												<li>Data Visualization with Python</li>			
+											</ul>
+										</div>
+									</div>
+									<hr />
+
+									<h2>PROCESS</h2>
+									<p></p>
+									<h3>Data</h3>
+										<p>Original data sets used throughout the project:</p>
+											<ul>
+												<li>Orders dataset</li>
+												<li>order_products_prior dataset</li>
+												<li>Products dataset</li>
+												<li>Customers dataset</li>
+												
+											</ul>
+										<p>Note: The original dataset is shown in gray color in the image below together with the total number of rows.</p>
+								
+										<span class="image fit"><img src="images/instacart_dataflow.jpeg" alt="" /></span>
+										</p>
+						
+									<h3>Step 1: Data Cleaning</h3>
+										<p>I consider the data cleansing step to be the most important step when doing data analysis. As an analyst I realize that this step can be time consuming as I need to dig deeper into the data to ensure that it is consistent, accurate, complete and uniform before moving further into the analysis process.</p>
+										<li>Data Consistency Check</li>
+										<span class="image fit"><img src="images/instacart_cosistency.jpeg" alt="" /></span>
+										
+										<li>Data Wrangling</li>
+										<span class="image fit"><img src="images/instacart_wrangling.jpeg" alt="" /></span>
+									
+									<h3>Step 2: Data Merging, Column Derivations, and Aggregations</h3>
+										<li>Data Merging</li>
+										<p>After each original data set passed the consistency check and was in the correct format (uniform with each other), I continued the process by merging them to create my final data set shown in the pink box in the "population flow" image above. It is this final data set that is used for analysis as it contains all the required information in the same place. </p>
+										
+										<li>Column Derivations and Aggregations</li> 
+										<p>Deriving data helps me gain critical insights that may not be readily apparent in my original data. I created some flags to help me understand the data more deeply. By aggregating the data, I get a more concise summary of my statistical analysis. Some of the code used in this step can be found <a href="https://drive.google.com/file/d/1zHhKi6Wpzykn6f92pI7tmKkvElAj1NXJ/view?usp=sharing"  target="_blank" class="">here.</a></p>
+										<span class="image fit"><img src="images/instacart_derivations_aggs.jpeg" alt="" /></span>
+
+									<h3>Step 3: Data Analysis and Visualization</h3>
+									<p>I'd like to highlight data visualization as my favorite part of being a Data Analyst. Through this step, I can see patterns and trends more clearly which can help me draw conclusions from my data analysis.</p>
+									
+									<li><b>The sales team needs to know what the busiest days of the week and hours of the day are.</b></li>
+									
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<span class="image fit"><img src="images/busiest_days.png" alt="" /></span>
+										</div>
+										
+										<div class="col-6 col-12-small">
+											<br>
+											<br>
+											<br>
+											<p>The busiest days are <b>Saturday (0), Sunday (1), and Friday (6).</b> The least busy days are Tuesday (3) and Wednesday (4).</p>
+										</div>
+									</div> 
+
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<span class="image fit"><img src="images/busiest_hours.png" alt="" /></span>
+										</div>
+										
+										<div class="col-6 col-12-small">
+											<br>
+											<br>
+											<br>
+											<p>Orders start to get crowded at <b>09.00 AM to 04:00 PM (working hours)</b> while the quiet hours are between 12.00 AM to 06.00 AM.</p>
+										</div>
+									</div> 
+								
+									<li><b>What’s the distribution among users in regards to their brand loyalty?</b></li>
+									
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<span class="image fit"><img src="images/loyalty_status.png" alt="" /></span>
+										</div>
+										
+										<div class="col-6 col-12-small">
+											<br>
+											<br>
+											<li>New Customer: Total orders are below 10</li>
+											<li>Regular Customer: Total orders are between 10 & 40</li>
+											<li>Loyal Customer: Total orders are above 40</li>
+											Loyalty status is dominated by <b>regular customers</b>
+										</div>
+									</div> 
+
+									<div class="row">									
+										<div class="col-6 col-12-small">
+											<span class="image fit"><img src="images/orderfreq_loyalty2.png" alt="" /></span>
+										</div>
+										
+										<div class="col-6 col-12-small">
+											<br>
+											<p>Most of the frequent customers come from regular to loyal status. Conversely, non-frequent customers come from customers with new status. </p>
+											Frequent customer: median from days_since_prior_order is less than 10 days
+										</div>
+									</div>
+										
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<span class="image fit"><img src="images/orderfreq_loyalty.png" alt="" /></span>
+										</div>
+										
+										<div class="col-6 col-12-small">
+										<p>How often do they return to Instacart?</p>
+											<li>Loyal customer: About 5 days </li>
+											<li>Regular customer: About 9 days </li>
+											<li>New customer: About 17 days </li>
+ 											Therefore, regular and loyal customers tend to return in a short time to buy other products.
+										</div>
+									</div>
+	
+									<hr/>
+								
+									<h2>RESULTS</h2>
+									<b>Sample results:</b>
+										<li>Busy hours: 09:00 AM till 04:00 PM</li>
+										<li>Busy days: Friday, Saturday, and Sunday</li>
+										<li>Instacart customers are predominately regular customers who have total orders between 10 & 40 and have an average median prior order of about 9 days.</li>
+									<br>
+									<b>Full results:</b>
+										<li><a href="https://drive.google.com/file/d/1G3B9sfZjDeyQVxhJbSqI3ZpqTXQDN1N7/view?usp=sharing"  target="_blank" class="">Data Visualization</a></li>
+										<li><a href="https://github.com/nataliaviolii/InstacartGrocery" target="_blank" class="">GitHub - Instacart Grocery</a></li>
+										<li><a href="https://docs.google.com/spreadsheets/d/13W1Wvlh3XW3bLqiyPO9NzUhEY6cHNuid/edit?usp=sharing&ouid=116112889895261538034&rtpof=true&sd=true"  target="_blank" class="">Final Report - Instacart Grocery</a></li>
+									<hr/>
+
+								<!-- Blockquote -->
+									<h2>RECOMMENDATIONS</h2>
+									<blockquote>
+										<li><b>Advertisements</b></li>
+										Place some ads at the end of peak hours around 4:00pm. Research shows that customers are more likely to engage with ads when they are tired and when they do feel tired, they are more vulnerable. Also place more ads over the weekend.
+										<li><b>Provide time-limited coupons/discounts</b></li>
+										Provide time-limited coupons/discounts for three high-demand departments (Produce, Dairy Eggs, and Snacks), if possible, especially for those new customers. By giving them a limited discount that can be redeemed within a week, it is expected to increase their frequency of repurchasing items on Instacart from an average of 17 days to under 10 days.
+										<li><a href="https://drive.google.com/file/d/1MYwX3ojzvBUgkTIZPux1b6EgpQsdtcpq/view?usp=sharing"  target="_blank" class=""><b>Full Recommendations - Marketing Strategy</b></a></li></blockquote>
+
+									<hr />
+									<h2>RETROSPECTIVE</h2>
+									<b>Challenges during the project:</b>
+									<li>This project was my first project that contains a very large data set with more than 34+ million rows </li> 
+									<li>Encountered memory error several times while executing the code </li>
+
+									<br>
+									<b>What have I learned:</b>
+									<li>I'm getting to know Python more deeply for data analytics </li>
+									<li>Very interesting where I can use several ways (code) to be able to get the same result and from there I can learn which one is more efficient than the other, especially if I could save the time </li>
+									<li>I learned how to divide the dataset into smaller samples to help ease the analysis process and reduce memory error. This part was challenging as I had to reduce the amount of data I was analyzing but still had to ensure that I didn't lose any important information in the process </li>
+
+									<br>
+									<b>Things I could  do better:</b>
+									<li>I was too focused on the project but I didn't realize that I should have checked my project summary (requirements) more often. When I was about to create my final document, I found myself getting a bit off track and needed to review and spend some more time making sure I had met the project goals
+									<li>From the point above, I can use it as my reflection for my next project as a reminder of how important it is to keep track of the project summary to make sure what I am doing is exactly what it was meant to be done thereby saving me a lot of time </li>
+									
+									<hr />
+									<ul class="actions special">
+									<a href="portfolio.html" class="button large">My Portfolio </a>
+									</ul>
+									<hr />
+				</div>					
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<section>
+							<h2>Let's get in touch.</h2>
+							<b>Natalia Violi Kristena Wijaya</b>
+							<p>Address: Amsterdam, Netherlands
+							 <br>Email: nataliavioliw@gmail.com
+							 <br>Contact: +31 644 236 106
+							 <br>Resume:<a href="https://drive.google.com/file/d/16tKzwnXctjvp57ecjyQkeDn7W6MJ7wex/view?usp=sharing"  target="_blank"> My Resume </p>
+						</section>
+						<section>
+							<h3></h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/natalia-violi-kristena-wijaya/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.instagram.com/nataliavioli/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/nataliaviolii" target="_blank"  class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						
+					</div>
+
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
