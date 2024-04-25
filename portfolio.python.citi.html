@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="portfolio.html" class="logo">Portfolio</a>
+						<a href="portfolio.citi.html" class="logo">Portfolio</a>
 					</header>
 
 				<!-- Nav -->
@@ -42,7 +42,7 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Instacart Grocery Basket Analysis<br />
+									<h1>Citi Bike Analysis<br />
 									<br>
 									</h1>
 								</header>
@@ -51,26 +51,20 @@
 									<h2>PROJECT OVERVIEW</h2>
 									<p></p>
 									<h3>Company</h3>
-										<p>Instacart is an American delivery company that operates a grocery delivery and pick-up service in the United States and Canada. The company offers its services via a website and mobile app. The service allows customers to order groceries from participating retailers with the shopping being done by a personal shopper. <a href="https://en.wikipedia.org/wiki/Instacart" class="">Wikipedia </a></p>
+										<p>Citi Bike is a New York City bike share system. It is the nation's largest bike share program with 25.000 bikes and more than 1.500 stations in Manhattan, Brooklyn, Queens, the Bronx, Jersey City, and Hoboken.</a></p>
 									
-									<h3>Current Situation</h3>
-										<p>Instacart already has very good sales, but they want to uncover more information about their sales patterns. The Instacart stakeholders are most interested in the variety of customers in their database along with their purchasing behaviors.
-									
-									<h3>Key Questions</h3>
-										<li>The sales team needs to know what the busiest days of the week and hours of the day are.</li>
-										<li>They also want to know whether there are particular times of the day when people spend the most money.</li>
-										<li>Are there certain types of products that are more popular than others?</li>
-										<li>What’s the distribution among users in regards to their brand loyalty?</li>
-										<li>Are there differences in ordering habits based on a customer’s region?</li>
-										<li>Are there differences in ordering habits based on a customer’s loyalty status?</li>
-										<li>Other key questions can be found in my <a href="https://docs.google.com/spreadsheets/d/13W1Wvlh3XW3bLqiyPO9NzUhEY6cHNuid/edit?usp=sharing&ouid=116112889895261538034&rtpof=true&sd=true"  target="_blank" class="">Final Report - Instacart Grocery</a>
+									<h3>Analysis Questions</h3>
+										<li>When is the busiest time (hour/day) for users to start biking? </li>
+										<li>What is the average trip duration for each user category? </li>
+										<li>Is there a relationship between the start time of the ride and the duration of the ride?</li>
+										<li>Where is the busiest station?</li>
 									</p>
-									
+
 									<h3>Objective</h3>
-										<p>The objective of this project is to analyze customer behavior and uncover patterns for growth.</p>
+										<p>The objective of this project is to analyze user behavior of Citi Bike.</p>
 
 									<h3>Context</h3>
-									This project was created with the aim of diving deeper into the use of Python tool and its libraries as a part of <a href= "https://drive.google.com/file/d/1TfmLX7bXt0N15lU57NtwaBwZdp8ZJXOG/view?usp=sharing"  target="_blank" class="">CareerFoundry's Data Immersion Program</a>.
+									This project was created with the aim of diving deeper into the use of Python tool and its libraries as a part of <a href= "https://drive.google.com/file/d/14SaHzdoP2J7gQkHCpVauhnbXB_2H5RzR/view?usp=sharing"  target="_blank" class="">CareerFoundry's Data Immersion Program</a> and to learn how to address the defined questions/hypotheses using advanced analytical techniques.
 									<hr />
 
 									<!-- Lists -->
@@ -95,13 +89,11 @@
 
 											<h3>SKILLS</h3>
 											<ul class="alt">
-												<li>Exporting Data</li>
-												<li>Combining Data</li>
-												<li>Aggregating Variables</li>
-												<li>Deriving New Variables</li>
-												<li>Data Consistency Checks</li>
-												<li>Data Wrangling & Subsetting</li>
-												<li>Data Visualization with Python</li>			
+												<li>Scikit-Learn</li>
+												<li>Time-series Analysis</li>
+												<li>Statistical Modelling</li>
+												<li>Supervised Machine Learning: Regression</li>
+												<li>Unsupervised Machine Learning: Clustering</li>
 											</ul>
 										</div>
 									</div>
@@ -112,16 +104,10 @@
 									<h3>Data</h3>
 										<p>Original data sets used throughout the project:</p>
 											<ul>
-												<li>Orders dataset</li>
-												<li>order_products_prior dataset</li>
-												<li>Products dataset</li>
-												<li>Customers dataset</li>
+												<li><a href= "https://www.kaggle.com/datasets/ryanmcummings/citi-bike-data"  target="_blank" class="">Citi Bike from Kaggle</a></li>
 												
 											</ul>
-										<p>Note: The original dataset is shown in gray color in the image below together with the total number of rows.</p>
-								
-										<span class="image fit"><img src="images/instacart_dataflow.jpeg" alt="" /></span>
-										</p>
+						
 						
 									<h3>Step 1: Data Cleaning</h3>
 										<p>I consider the data cleansing step to be the most important step when doing data analysis. As an analyst I realize that this step can be time consuming as I need to dig deeper into the data to ensure that it is consistent, accurate, complete and uniform before moving further into the analysis process.</p>
