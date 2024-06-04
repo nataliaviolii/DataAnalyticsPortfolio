@@ -128,14 +128,29 @@
 							
 
 									<h3>Step 3: Analysis</h3>
+									<li>Regression Analysis</li>
+									<span class="image fit"><img src="images/cb_regression.png" alt="" /></span>
+									<p><b>The line shows a linear relationship that changes direction:</b>
+										<li>Positive relationship: it starts increasing at 6:00 and reaches maximum at 15:00</li>
+										<li>Negative relationship: it starts decreasing at 16:00 and reaches minimum at 5:00</li></p>
+
+									<p><b>There are indications that the ride duration has a relationship with ride start time:</b></p>
+										<li>From 05.00 - 16.00: trip duration increases as the start time progresses</li> 
+										<li>From 17:00 - 04:00: trip duration decreases as the start time progresses</li></p>
+									
+									<p><b>Of all 3 time frames:</b>
+										<li>They produce small Mean Square Errors (MSE) on testing and training set</li>
+										<li>They produce values close to 1 for the R2 score</li>
+										The relatively low MSE and high R-squared score indicate that the model predictions are close to the actual value so that the average trip duration can be explained by the start hour variable.</p>
+									
 									<li><b>Cluster Analysis</b></li>
-									<p>Here I conducted more analysis to discover hidden and interesting patterns.</p>
-									<span class="image fit"><img src="images/cb_cluster.png" alt="" /></span>
-									<span class="image fit"><img src="images/cb_cluster_1.png" alt="" /></span>
-									<span class="image fit"><img src="images/cb_cluster_2.png" alt="" /></span>
-									<p><b>Descriptive Analysis:</b>
-									<span class="image fit"><img src="images/cb_cluster_desc.png" alt="" /></span>
-									</p>
+										<p>Here I conducted more analysis to discover hidden and interesting patterns.</p>
+											<span class="image fit"><img src="images/cb_cluster.png" alt="" /></span>
+											<span class="image fit"><img src="images/cb_cluster_1.png" alt="" /></span>
+											<span class="image fit"><img src="images/cb_cluster_2.png" alt="" /></span>
+											<p><b>Descriptive Analysis:</b>
+											<span class="image fit"><img src="images/cb_cluster_desc.png" alt="" /></span>
+										</p>
 									
 									<b>1. Dark purple (3) and pink (1) clusters:</b>
 										<li>This culster dominated by younger users (with an average birth in 1980) compared to other clusters</li>
@@ -150,7 +165,7 @@
 									<br>
 									<li><b>Busiest Stations</b></li>
 									<span class="image fit"><img src="images/cb_station.png" alt="" /></span>
-									<p>The busiest station to start:
+									<p><b>The busiest station to start:</b>
 									<li>Pershing Square N: ±17 rides daily with total 451 rides in September 2013</li>
 									<li>W 20 St & 11 Ave: ±17 rides daily with total 417 rides in September 2013</li>
 									<li>E 17 St & Broadway: ±16 rides daily with total 415 rides in September 2013</li>
