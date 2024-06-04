@@ -175,8 +175,15 @@
 									<li>West St & Chambers St: ±15 rides daily with total 349 rides in September 2013</li></p>
 
 									<h4><b>Time Series Analysis (Forecast)</b></h4>
-									<span class="image fit"><img src="images/cb_forecast.png" alt="" /></span>
-									<p>Forecast shows that this will repeat the pattern that at weekends the number of trips will decrease</p>
+										<span class="image fit"><img src="images/cb_forecast.png" alt="" /></span>
+										<span class="image fit"><img src="images/cb_ARIMA_result.png alt="" /></span>
+									<p>Time Series Forecasting:
+									<li>First, I started determining my parameters (p, q, and d values)</li> 
+									<li>Second, I splitted the data into test and training sets</li>
+									<li>Third, I run my model and perform several iterations along the process</li>
+
+									<p>Results:</p>
+									Nearly all coefficients are significant (p <= 0.05) and the model appears to be a good fit because the forecast lines overlap with the actual lines. Therefore, there is a tendency for the value to continue to decline at the weekend.
 
 					
 									<h2>RESULTS</h2>
