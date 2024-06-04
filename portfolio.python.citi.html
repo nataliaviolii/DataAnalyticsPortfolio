@@ -149,13 +149,13 @@
 	
 									<br>
 									<li><b>Busiest Stations</b></li>
-									<span class="image fit"><img src="images/cb_geo.png" alt="" /></span>
+									<span class="image fit"><img src="images/cb_station.png" alt="" /></span>
 									<p>The busiest station to start:
-									<li>Pershing Square N</li>
-									<li>W 20 St & 11 Ave</li>
-									<li>E 17 St & Broadway</li>
-									<li>Lafayette St & E 8 St</li>
-									<li>West St & Chambers St</li></p>
+									<li>Pershing Square N: ±17 rides daily with total 451 rides in September 2013</li>
+									<li>W 20 St & 11 Ave: ±17 rides daily with total 417 rides in September 2013</li>
+									<li>E 17 St & Broadway: ±16 rides daily with total 415 rides in September 2013</li>
+									<li>Lafayette St & E 8 St: ±16 rides daily with total 423 rides in September 2013</li>
+									<li>West St & Chambers St: ±15 rides daily with total 349 rides in September 2013</li></p>
 
 									<li><b>Time Series Analysis (Forecast)</b></li>
 									<span class="image fit"><img src="images/cb_forecast.png" alt="" /></span>
@@ -163,11 +163,17 @@
 
 					
 									<h2>RESULTS</h2>
-									<b>Sample results:</b>
-										<li>Busy hours: 08:00 and 17:00 - 18:00</li>
+									<b>Insight and Conclusion:</b>
+										<li>Peak hours occur when people travel to work: at 08:00 (2,944 total rides), 17.00 (4,117 total rides), and 18.00 (3,983 total rides) in September 2013 which indicates that users might use Citi Bike to commute to work</li>
 										<li>Busy days: Weekdays (especially Friday)</li>
-										<li>Even though weekends are less busy, the average trip duration is longer than other days</li>
-										<li>Younger people have shorter average trip durations and tend to start their trips later in the night, while older people have a higher average trip duration</li>
+										<li>Even though weekends seem to have fewer users (±4k-5k users compared to ±6k users on the weekdays), the average trip duration on weekends (±13 minutes) is slightly higher than on other days (±12 minutes). Further analysis shows that weekends have very low morning users compared to other days, this may be because people tend to wake up late on weekends so there are fewer morning users. And the increase in the duration of their trips may be because people enjoy cycling on weekends without rushing</li>
+										<li>In terms of user, Citi Bike is more dominated by male with twice the number of users compared to women. Female users tend to bike longer than male. The difference can be seen from 05:00 - 21:00 with most times being 2 minutes longer than male users</li>
+										<li>Younger people (with an average birth in 1980) have shorter average trip durations around 9.4 minutes and tend to have more users later in the night/mid night, while eldery (with an average birth in 1961) have a slightly higher average trip duration with fewer users in the middle of the night. Between 00:00 - 05:00 cluster shows that there are almost no elderly people cycling around that time</li>
+										<li>The busiest stations are Pershing Square N and W 20 St & 11 Ave with an average of about 17 rides per day</li>
+										<li>Forecast shows that this will repeat the pattern that at weekends the number of trips will decrease.</li>
+
+
+								
 									<br>
 									<b>Full results:</b>
 										<li><a href="https://public.tableau.com/app/profile/natalia.violi.kristena.wijaya/viz/CitiBikeAnalysis_17140530578350/CitiBike"  target="_blank" class="">Dashboard - Citi Bike</a></li>
